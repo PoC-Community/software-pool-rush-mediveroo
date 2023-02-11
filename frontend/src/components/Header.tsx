@@ -1,33 +1,32 @@
 import React from 'react';
-import { Button, Flex, IconButton, Image, Text } from '@chakra-ui/react';
-import { Link as RouteLink, useNavigate } from 'react-router-dom';
+import { Button, Flex, Image, Text, Box } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
 import Logo from './Logo';
 
 const Header = () => {
+    const navigate = useNavigate();
     return (
-        <Flex align="center" p={5} bgColor='black'>
+        <Flex align="center" p={5} bgColor='blackAlpha.900'>
             <Image src="./logo2.png" alt="logo mediveroo" width={120} />
-            <Text ml={5} fontWeight="bold" color='white' fontSize={50} fontFamily="monospace">Mediveroo</Text>
-            {/* <Flex alignItems="right"> */}
-                <Button alignItems='right'>
-                    <i className="fas fa-shopping-cart fa-2x" color='white'></i>
+            <Text ml={7} fontWeight="bold" color='white' fontSize={50} fontFamily="monospace">Mediveroo</Text>
+            <Flex justifyContent="flex-end" w="80%">
+                <Button alignItems='right' bgColor='white' mr={5} onClick={() => navigate('/')}>
+                    <Box pt={1}>
+                        <i className="fas fa-shopping-cart fa-2x"></i>
+                    </Box>
                 </Button>
-                <Button w="10%" variant='outline'type="submit" bgColor='white' borderColor='green'
-                borderWidth={3} _hover={{ opacity: 0.8 }}
-                // onClick={() => navigate('/order')}
-                >
+                <Button w="10%" variant='outline' type="submit" colorScheme='green' bgColor='white'
+                borderWidth={3} onClick={() => navigate('/login')}  mr={5}>
                     Login
                 </Button>
-                <Button
-                w="10%"
-                type="submit"
-                bgColor='green.500'
-                _hover={{ opacity: 0.8 }}
-                // onClick={() => navigate('/order')}
+                <Button w="10%" type="submit" colorScheme='green' onClick={() => navigate('/register')} mr={5}
+                // variant='inline'
+                // bgColor='green.500'
+                // _hover={{ opacity: 0.8 }}
                 >
                     Register
                 </Button>
-            {/* </Flex> */}
+            </Flex>
         </Flex>
     );
 };

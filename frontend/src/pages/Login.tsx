@@ -35,7 +35,7 @@ const Login = (): JSX.Element => {
 					type="submit"
                     bgColor='green.500'
                     _hover={{ opacity: 0.8 }}
-					onClick={() => navigate('/order')}
+					onClick={() => navigate('/')}
 				>
 					Login
 				</Button>
