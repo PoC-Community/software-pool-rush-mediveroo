@@ -6,10 +6,10 @@ const Header = () => {
     const navigate = useNavigate();
     return (
         <Flex align="center" p={5} bgColor='blackAlpha.900'>
-            <Image src="./logo2.png" alt="logo mediveroo" width={120} />
+            <Image src="./logo2.png" alt="logo mediveroo" width={120} onClick={() => navigate('/')}/>
             <Text ml={7} fontWeight="bold" color='white' fontSize={50} fontFamily="monospace">Mediveroo</Text>
             <Flex justifyContent="flex-end" w="80%">
-                <Button alignItems='right' bgColor='white' mr={5} onClick={() => navigate('/')}>
+                <Button alignItems='right' bgColor='white' mr={5} onClick={() => navigate('/cart')}>
                     <Box pt={1}>
                         <i className="fas fa-shopping-cart fa-2x"></i>
                     </Box>

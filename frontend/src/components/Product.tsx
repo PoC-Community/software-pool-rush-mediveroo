@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box, Center, Image, Flex, Text, Button } from "@chakra-ui/react";
 
-type ProductType = { name: string } & { src_i: string };
+type ProductType = { name: string } & { src_i: string } & {hid: boolean};
 
-const Product = ({name, src_i}: ProductType) => {
+const Product = ({name, src_i, hid}: ProductType) => {
   return (
     <Center h="35vh" w="20vw">
       <Box p="5" maxW="300px" borderWidth="1px">
@@ -13,7 +13,7 @@ const Product = ({name, src_i}: ProductType) => {
           {name}
         </Text>
         <Flex mt={2} align="center">
-          <Button fontSize="sm" bgColor={"green.400"} _hover={{ opacity: 0.8 }}>
+          <Button fontSize="sm" bgColor={"green.400"} _hover={{ opacity: 0.8 }} hidden={hid}>
             Ajouter au panier
           </Button>
         </Flex>
