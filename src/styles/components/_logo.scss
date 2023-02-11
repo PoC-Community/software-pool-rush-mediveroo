@@ -1,17 +1,18 @@
 .logo {
   @include verticalCenter;
   margin: 5px auto;
-  width: 200px;
+  width: 250px;
+  height: auto;
   border-radius: 20px;
-  padding: 5px 0;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
+  padding: 3px 0;
+  box-shadow: 0 6px 3px rgba(0, 0, 0, 0.307);
   // background: url(../../assets/img/main.jpg) center/cover;
 
   img {
-    height: 40px;
+    height: 60px;
   }
   h3 {
-    margin-left: 10px;
+    margin-left: 20px;
     // color: black;
     color: $color-3;
   }

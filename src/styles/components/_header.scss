@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 5%;
+        margin: 2% 8%;
+    }
+    img:hover {
+        transition: 0.7s;
+        transform: rotateZ(360deg);
+        }
+}

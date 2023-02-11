@@ -4,6 +4,17 @@ const Drugs = () => {
     return (
         <div className='drugs'>
             <h1>DRUGS !!!!</h1>
+            <h1>DRUGS !!!!</h1>
+            <h1>DRUGS !!!!</h1>
+            <h1>DRUGS !!!!</h1>
+            <h1>DRUGS !!!!</h1>
+            <h1>DRUGS !!!!</h1>
+            <h1>DRUGS !!!!</h1>
+            <h1>DRUGS !!!!</h1>
+            <h1>DRUGS !!!!</h1>
+            <h1>DRUGS !!!!</h1>
+            <h1>DRUGS !!!!</h1>
+            <h1>DRUGS !!!!</h1>
         </div>
     );
 };

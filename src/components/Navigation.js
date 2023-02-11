@@ -6,10 +6,10 @@ const Navigation = () => {
         <div className='navigation'>
             <ul>
                 <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                    <li>accueil</li>
+                    <li>Home</li>
                 </NavLink>
                 <NavLink to="/order" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                    <li>order</li>
+                    <li>Order</li>
                 </NavLink>
             </ul>
         </div>

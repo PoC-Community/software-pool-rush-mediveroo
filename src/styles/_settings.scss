@@ -5,9 +5,18 @@
 
 $font-1: "font-1", sans-serif;
 
-$color-1: #61dafb;
-$color-2: salmon;
-$color-3: #282c34;
+body {
+  //background: $white;
+  background: linear-gradient(rgb(235, 231, 231), rgb(47, 185, 47, 0.8));
+  background-repeat: no-repeat;
+  z-index: -1;
+  font-family: $font-1;
+  // @include verticalCenter;
+}
+
+$color-1: #008a61;
+$color-2: rgb(255, 25, 0);
+$color-3: #000000;
 $white: rgb(243, 243, 243);
 
 @mixin verticalCenter {
@@ -22,11 +31,6 @@ $white: rgb(243, 243, 243);
   box-sizing: border-box;
 }
 
-body {
-  background: $white;
-  font-family: $font-1;
-  // @include verticalCenter;
-}
 li {
   list-style-type: none;
 }
