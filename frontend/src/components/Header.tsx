@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Flex, Image, Text, Box } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
-import Logo from './Logo';
 
 const Header = () => {
     const navigate = useNavigate();

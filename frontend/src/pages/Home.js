@@ -1,16 +1,12 @@
 import React from 'react';
 import Drugs from '../components/Drugs';
 import Footer from '../components/Footer';
-import Logo from '../components/Logo';
-import Navigation from '../components/Navigation';
 import Header from '../components/Header';
 
 const Home = () => {
     return (
         <div>
             <Header />
-            {/* <Logo /> */}
-            {/* <Navigation /> */}
             <Drugs title="Maux de tête" n1="Dolipranne 1000mg" n2="Dolipranne 1000mg"
             n3="Dolipranne 1000mg" n4="Dolipranne 1000mg" n5="Dolipranne 1000mg" s1="./doliprane.png"
             s2="./doliprane.png" s3="./doliprane.png" s4="./doliprane.png" s5="./doliprane.png" />
