@@ -1,5 +1,5 @@
 import React from 'react';
-import { Class_img } from '../components/class';
+import { Class_img } from '../components/category';
 import Drugs from '../components/Drugs';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
