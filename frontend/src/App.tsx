@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Notfound from './pages/Notfound';
 import Order from './pages/Order';
+import Payement from './pages/Payement';
 import Register from './pages/Register';
 // import { Center, Spinner, Text, VStack } from '@chakra-ui/react';
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Notfound />} />
+        <Route path="/payement" element={<Payement />} />
       </Routes>
     </BrowserRouter>
   );

@@ -3,8 +3,11 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Product from '../components/Product';
+import { Button, ButtonGroup } from '@chakra-ui/react'
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <Header />
@@ -20,7 +23,12 @@ const Cart = () => {
             <Flex align="center">
                 <Product name={"Dolipranne 1000mg"} src_i={"./doliprane.png"} hid={false} />
             </Flex>
+            <Flex p={5} mt={10} justifyContent='center'>
+            <Button colorScheme='green' outlineColor='green.400' onClick={() => navigate('/payement')}>Payer</Button>
+            </Flex>
+
             <Footer />
+
         </div>
     );
 };
