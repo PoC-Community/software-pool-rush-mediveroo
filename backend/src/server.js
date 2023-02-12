@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const uuid = require("uuid");
 const app = express();
+const cors = require("cors");
 
 // Connection à la base de données
 mongoose.connect("mongodb://localhost/Melivroo", { useNewUrlParser: true });
@@ -116,6 +117,7 @@ const User = mongoose.model("User", UserSchema);
 // Configurez body-parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 
 // Connexion de l'utilisateur
 app.post("/login", function(req, res) {
