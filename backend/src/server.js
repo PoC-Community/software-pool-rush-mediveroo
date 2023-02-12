@@ -218,6 +218,9 @@ app.post("/orders", function(req, res) {
     });
 });
 
+app.get("/", function(req, res) {
+  res.send("Bienvenue sur Melivroo");
+});
 
 // Écouter les requêtes sur le port 3000
 app.listen(3000, function() {
