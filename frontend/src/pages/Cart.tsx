@@ -21,7 +21,7 @@ const Cart = () => {
                 Mon panier
             </Text>
             <Flex align="center">
-                <Product name={"Dolipranne 1000mg"} src_i={"./doliprane.png"} hid={false} />
+                <Product name={"Dolipranne 1000mg"} src_i={"./doliprane.png"} hid={true} />
             </Flex>
             <Flex p={5} mt={10} justifyContent='center'>
             <Button colorScheme='green' outlineColor='green.400' onClick={() => navigate('/payement')}>Payer</Button>
