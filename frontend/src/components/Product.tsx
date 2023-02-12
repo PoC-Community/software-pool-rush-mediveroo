@@ -13,7 +13,7 @@ const Product = ({name, src_i, hid}: ProductType) => {
           {name}
         </Text>
         <Flex mt={2} align="center">
-          <Button fontSize="sm" bgColor={"green.400"} _hover={{ opacity: 0.8 }} hidden={hid}>
+          <Button fontSize="sm" bgColor={"green.400"} colorScheme="green" color="black" _hover={{ opacity: 0.8 }} hidden={hid}>
             Ajouter au panier
           </Button>
         </Flex>

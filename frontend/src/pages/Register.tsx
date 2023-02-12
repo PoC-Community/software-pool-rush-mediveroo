@@ -40,6 +40,8 @@ const Register = (): JSX.Element => {
 					w="70%"
 					type="submit"
                     bgColor='green.500'
+					colorScheme="green"
+					color="black"
                     _hover={{ opacity: 0.8 }}
 					onClick={() => navigate('/')}
 				>
@@ -55,7 +57,9 @@ const Register = (): JSX.Element => {
 				<Button
 					w="70%"
 					type="submit"
-                    bgColor='green.200'
+                    bgColor='green.300'
+					colorScheme="green"
+					color="black"
                     _hover={{ opacity: 0.8 }}
 					onClick={() => navigate('/login')}
 				>

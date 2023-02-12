@@ -2,7 +2,7 @@ import React from 'react';
 import { Flex, Image } from '@chakra-ui/react'
 
 
-export const Class_img = () => {
+export const Menu = () => {
       const handleClick_head = () => {
         window.scrollTo({ top: 100, behavior: "smooth" });
       };
@@ -26,5 +26,4 @@ export const Class_img = () => {
         </Flex>
         </div>
       );
-    };
-
+};

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Class_img } from '../components/category';
+import { Menu } from '../components/Menu';
 import Drugs from '../components/Drugs';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <Class_img />
+            <Menu />
             <Drugs title="Maux de tête" n1="Dolipranne 1000mg" n2="Dolipranne 1000mg"
             n3="Dolipranne 1000mg" n4="Dolipranne 1000mg" n5="Dolipranne 1000mg" s1="./doliprane.png"
             s2="./doliprane.png" s3="./doliprane.png" s4="./doliprane.png" s5="./doliprane.png" />
